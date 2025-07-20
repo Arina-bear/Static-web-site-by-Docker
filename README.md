@@ -1,1 +1,60 @@
 # Static-web-site-by-Docker
+
+✨ Features
+
+✅ User Authentication – Sign up, login, and profile management
+✅ Posts – Create, edit, and delete blog posts
+✅ Comments – Discuss posts with threaded replies
+✅ Image Uploads – Add images to posts (via Pillow)
+✅ Responsive Design – Works on mobile & desktop
+
+Built with:
+
+Backend: Django + PostgreSQL
+Frontend: HTML/CSS, Bootstrap
+Deployment: Docker-ready
+
+📦 Backend (Django)
+Service: web (main application)
+Role: Request handling, API, page rendering
+Technologies:
+Django (Python framework)
+Gunicorn (WSGI server for production)
+Pillow (image processing)
+
+🗃 Database (PostgreSQL)
+Service: db
+Role: Data storage (posts, comments, users)
+Configuration:
+Login/password: postgres (configured in docker-compose.yml)
+Automatic volume creation for data persistence
+
+🖥 Frontend (optional)
+HTML/CSS
+
+How It Works:
+
+web Service:
+Built from Dockerfile (with Python dependencies installed)
+Mounts code volume for hot-reload during development
+Uses Gunicorn to run Django in production
+
+db Service:
+Uses the official PostgreSQL 13 image
+Data persists in postgres_data volume (survives container restarts)
+
+Volumes:
+postgres_data – stores database files
+static_volume – shared volume for static files (CSS/JS)
+
+Structure
+<img width="368" height="144" alt="image" src="https://github.com/user-attachments/assets/7570d32f-f117-4f2c-8535-76adc0f11c6c" />
+
+<img width="202" height="416" alt="image" src="https://github.com/user-attachments/assets/81be0dd4-aa12-4023-9749-f3c5c14bebf9" />
+
+<img width="200" height="258" alt="image" src="https://github.com/user-attachments/assets/96d3a6bf-7d1b-4bd0-b10a-ae58f320b12e" />
+
+<img width="183" height="82" alt="image" src="https://github.com/user-attachments/assets/ce4d46f5-b200-4d49-876a-0b841e8fdc64" />
+
+
+
