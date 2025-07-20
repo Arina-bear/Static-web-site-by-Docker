@@ -56,5 +56,13 @@ Structure
 
 <img width="183" height="82" alt="image" src="https://github.com/user-attachments/assets/ce4d46f5-b200-4d49-876a-0b841e8fdc64" />
 
+Design
+
+<img width="460" height="254" alt="image" src="https://github.com/user-attachments/assets/ab4b42c1-41d8-4727-9756-425d86dbd5f5" />
+
+<img width="1198" height="499" alt="image" src="https://github.com/user-attachments/assets/30186b76-d665-4bf4-a3bd-75c755f6e5df" />
+
+
+
 
 
