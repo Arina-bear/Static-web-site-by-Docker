@@ -1,0 +1,57 @@
+<style>
+  .radial-gradient-text {
+    background: radial-gradient(circle, hsl(60, 100%, 50%), #d232a4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+
+<body style="background-color: rgb(249, 227, 255);">
+  <h1 class="radial-gradient-text", style="font-size:46;">{{ post.title }}</h1>
+    <p style="font-family:'Courier New', Courier, monospace;font-size:15; font-weight:700; font-style:italic;color:palevioletred;">By {{ post.author.username }} | {{ post.created_at }}</p>
+    <table class="table1">
+      <tr>
+        <td class="td1">
+            <p style="font-family:'Courier New', Courier, monospace;font-size:15; font-style:italic; color:palevioletred;"> {{ post.content }}</p>
+             <div style="display: flex; justify-content: center;">
+              <img src="{{ post.image.url }} " alt="{{ post.title }}" 
+                width="300" 
+                height="200">{% load static %}
+             </img>
+            </div>
+         </td>
+       </tr> 
+    </table> 
+  <h2 class="radial-gradient-text",style="font-size:24;" >Comments</h2>
+          {% for comment in post.comments.all %}
+ </body>
+
+   <a style="font-family:'Courier New', Courier, monospace;font-size:15; font-weight: 700; color:rgb(15, 41, 239);"> {{ comment.author.username }}: </a> 
+    <table class="table2">
+      <tr>
+      <td class="td2">
+       <p style="font-family:'Courier New', Courier, monospace;font-size:15; font-style:italic; color:rgb(15, 41, 239);"> {{ comment.text }} {% endfor %}</p>
+      </td>
+    </tr>
+  </table>
+
+<style>
+  .table1 {
+    border: 1px solid rgb(233, 33, 206); /* Внешняя граница таблицы */
+    border-collapse: collapse; /* Объединение границ ячеек */
+  }
+  .table1 th, .table1 td {
+    border: 1px solid rgb(233, 33, 206); /* Границы ячеек */
+    padding: 8px; /* Отступы внутри ячеек */
+  }
+  .table2 {
+    border: 1px solid rgb(15, 41, 239); /* Внешняя граница таблицы */
+    border-collapse: collapse; /* Объединение границ ячеек */
+  }
+  .table2 th, .td {
+    border: 1px solid rgb(15, 41, 239); /* Границы ячеек */
+    padding: 8px; /* Отступы внутри ячеек */
+  }
+</style>
+

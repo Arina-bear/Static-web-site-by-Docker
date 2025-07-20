@@ -1,0 +1,15 @@
+<body style="background-color: rgb(249, 227, 255);">
+<h1 style="font-family: 'Impact', serif, sans-serif; font-size: 44px; font-weight: 700; color: peru">
+    Blog Posts</h1>
+<ul>
+{% for post in posts %}
+    <li>
+     <p style="line-height: 1.6;">
+        <a style="font-family: 'Times New Roman'; font-size: 25; font-weight:600; color: salmon " href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+        <span style = "font-family:'Courier New', Courier, monospace; font-size:15; font-style:italic;  color:palevioletred;">By</span> 
+        <a style="font-family:'Courier New', Courier, monospace;font-size:15; font-weight:700; font-style:italic; color:palevioletred;">{{ post.author.username }}</a>
+     </p>
+    </li>
+{% endfor %}
+</ul>
+</body>

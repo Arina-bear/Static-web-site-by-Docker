@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: django
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "0.0.0.0:8000:8000"
+    volumes:
+      - .:/usr/src/app
+      - ./media:/app/media
+      - ./static:/app/static
+    depends_on:
+      - pgdb
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_DB: blogdb
+      POSTGRES_USER: bloguser
+      POSTGRES_PASSWORD: blogpass
+      POSTGRES_PORT: 5432
+
+  pgdb:
+    image: postgres:13
+    container_name: pgdb
+    environment:
+      POSTGRES_HOST: pgdb 
+      POSTGRES_DB: blogdb
+      POSTGRES_USER: bloguser
+      POSTGRES_PASSWORD: blogpass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data: 
