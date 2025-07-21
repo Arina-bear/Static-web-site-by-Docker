@@ -72,6 +72,17 @@ Commands for building docker containers
 5. docker-compose exec web python manage.py createsuperuser
 
 
+Creating an user by superuser
+1.Users--->2.username-->3.password
+
+
+<img width="1191" height="344" alt="image" src="https://github.com/user-attachments/assets/e47c8652-a48e-4af3-a687-50b46d97f3cb" />
+
+2.-3.
+
+<img width="871" height="471" alt="image" src="https://github.com/user-attachments/assets/81c2c97c-cdd7-4623-895c-3d274b5c7060" />
+
+
 
 
 
