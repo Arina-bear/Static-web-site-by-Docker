@@ -63,6 +63,15 @@ Design
 <img width="1198" height="499" alt="image" src="https://github.com/user-attachments/assets/30186b76-d665-4bf4-a3bd-75c755f6e5df" />
 
 
+Commands for building docker containers
+
+1. docker-compose build
+2. docker-compose up -d
+3. docker-compose exec web python manage.py makemigrations
+4. docker-compose exec web python manage.py migrate
+5. docker-compose exec web python manage.py createsuperuser
+
+
 
 
 
