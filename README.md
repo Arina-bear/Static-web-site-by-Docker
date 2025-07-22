@@ -1,4 +1,4 @@
-# Static-web-site-by-Docker
+# Static-web-site-by-Docker+Django+PostgreSQL
 ------------------------------
 The focus of this project is specifically on gaining experience in backend development.The frontend remains primitive.
 To secure database queries, it is also worth developing an API.
