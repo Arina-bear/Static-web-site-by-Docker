@@ -1,14 +1,15 @@
 # Static-web-site-by-Docker
 ------------------------------
-The focus of this project is specifically on gaining experience in backend development.The frontend remains primitive
+The focus of this project is specifically on gaining experience in backend development.The frontend remains primitive.
+To secure database queries, it is also worth developing an API.
 ---------------------------
 ✨ Features
 
-✅ User Authentication – Sign up, login, and profile management
-✅ Posts – Create, edit, and delete blog posts
-✅ Comments – Discuss posts with threaded replies
-✅ Image Uploads – Add images to posts (via Pillow)
-✅ Responsive Design – Works on mobile & desktop
+-User Authentication – Sign up, login, and profile management
+- Posts – Create, edit, and delete blog posts
+- Comments – Discuss posts with threaded replies
+- Image Uploads – Add images to posts (via Pillow)
+- Responsive Design – Works on mobile & desktop
 
 Built with:
 
@@ -83,6 +84,8 @@ Creating an user by superuser
 2.-3.
 
 <img width="871" height="471" alt="image" src="https://github.com/user-attachments/assets/81c2c97c-cdd7-4623-895c-3d274b5c7060" />
+
+
 
 
 
