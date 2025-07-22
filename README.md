@@ -1,5 +1,7 @@
 # Static-web-site-by-Docker
-
+------------------------------
+The focus of this project is specifically on gaining experience in backend development.The frontend remains primitive
+---------------------------
 ✨ Features
 
 ✅ User Authentication – Sign up, login, and profile management
