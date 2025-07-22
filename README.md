@@ -67,12 +67,12 @@ Design
 
 
 Commands for building docker containers
-
-1. docker-compose build
-2. docker-compose up -d
-3. docker-compose exec web python manage.py makemigrations
-4. docker-compose exec web python manage.py migrate
-5. docker-compose exec web python manage.py createsuperuser
+1. django-admin startproject core .
+2. docker-compose build
+3. docker-compose up -d
+4. docker-compose exec web python manage.py makemigrations
+5. docker-compose exec web python manage.py migrate
+6. docker-compose exec web python manage.py createsuperuser
 
 
 Creating an user by superuser
